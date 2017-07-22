@@ -11,7 +11,7 @@ body{background: #f2f2f2;}
 .nav_home li{float: left;padding: 0 26px;font-family: "FZYouHK_512B","微软雅黑","宋体";font-size: 20px;color: #fff;line-height: 37px;border-right: 1px solid #bfbfbf;display: block;}
 .nav_home li a {display: block;color: #fff;}
 
-h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 38px;text-align: center;padding: 26px 0 26px 0;font-weight: normal;}
+h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 28px;text-align: center;padding: 26px 0 26px 0;font-weight: normal;}
 .content{width: 1000px;margin: 0 auto; background: #fff;}
 .padd{padding:0 36px 60px 36px;}
 .oneColumn{padding: 10px 66px 38px 66px;}
@@ -19,7 +19,7 @@ h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 38px;text-a
 .BreadcrumbNav a {color: #000;}
 .pub_border{border: 1px #dddddd solid;}
 .pages-data{position: relative;border-bottom: 1px #dcdcdc solid;padding-top: 7px;text-align: left;color: #666666;font-size: 14px;height: 35px;overflow: hidden;}
-.pages-data span.font,.pages_print span.font{margin: 0 10px;}
+.pages-data span.font,.pages_print span.font{margin: 0 10px;padding-right:20px; }
 .pages_print {position: absolute; border-bottom: none;top: 7px;right: -12px;text-align: center;font-size: 14px;height: 30px;padding-bottom: 11px;}
 .oneColumn .pages_print .index_switchsize{padding-left: 300px;margin: 0 10px;}
 .pages_print .printIco{background: url(../img/ico.png) no-repeat 0px 0px;padding-left: 22px;}

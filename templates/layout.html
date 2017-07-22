@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% block header %}
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="../static/css/base.css">
   <link rel="stylesheet" type="text/css" href="../static/css/common.css">
+  {% endblock %}
 </head>
 <body>
 <!-- 网页主体结构开始　-->
@@ -21,26 +23,8 @@
       <div class="nav">
         <div class="nav_home">
           <div id="menu">
-            <ul class="nav" id="menu_list">
-              <li class="mainlevel">
-                <a href="">首页</a>
-              </li>
-              <li class="mainlevel">
-                <a href="">机构设置</a>
-              </li>
-              <li class="mainlevel">
-                <a href="">新闻图片</a>
-              </li>
-              <li class="mainlevel">
-                <a href="">工作通知</a>
-              </li>
-              <li class="mainlevel">
-                <a href="">领导讲话</a>
-              </li>
-              <li class="mainlevel">
-                <a href="">常用链接</a>
-              </li>
-            </ul>
+            {% block menu %}
+            {% endblock %}
           </div>
         </div>
       </div>

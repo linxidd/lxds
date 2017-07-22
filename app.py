@@ -15,5 +15,15 @@ def article():
     return render_template('article.html')
 
 
+@app.route('/editor')
+def editor():
+    return render_template('ueditor.html')
+
+
+@app.route('/upload/', methods=['GET', 'POST'])
+def upload():
+    pass
+
+
 if __name__ == '__main__':
     app.run(debug=True)
