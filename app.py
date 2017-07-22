@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -22,7 +22,8 @@ def editor():
 
 @app.route('/upload/', methods=['GET', 'POST'])
 def upload():
-    pass
+    print request.form
+    return render_template('article.html')
 
 
 if __name__ == '__main__':
