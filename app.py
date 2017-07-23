@@ -22,8 +22,7 @@ def editor():
 
 @app.route('/upload/', methods=['GET', 'POST'])
 def upload():
-    print request.form
-    return render_template('article.html')
+    return render_template('article.html', content=request.form['editorValue'])
 
 
 if __name__ == '__main__':

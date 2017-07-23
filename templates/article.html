@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% block header %}
 {{ super() }}
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script src="{{ url_for('static', filename='ueditor/ueditor.parse.js')}}"></script>
 {% endblock %}
 {% block menu %}
 {% include "menu.html" %}
@@ -34,8 +36,11 @@
         </div>
       </div>
 <!-- 文章内容开始　-->
-      <div class="pages_content" id="UCAP-CONTENT">
-        <p style="text-indent:2em;font-family:宋体;font-size:12pt; ">根据相关文件通知精神，先将相关内容通知各分局</p>
+      <div class="pages_content" id="UEDITOR_CONTENT">
+        {{ content|safe }}
+        <script type="text/javascript">
+          uParse(#UEDITOR_CONTENT)
+        </script>
 <!-- 文章内容结束　-->
       </div>
 <!-- 文章数据结束　-->
