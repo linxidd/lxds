@@ -1,3 +1,4 @@
+#-*- coding=utf-8 -*-
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -22,7 +23,7 @@ def editor():
 
 @app.route('/upload/', methods=['GET', 'POST'])
 def upload():
-    return render_template('article.html', content=request.form['editorValue'])
+    return render_template('article.html', content=request.form['editorValue'],publish_data=u'2017-10-23 11:34',link=u'新闻')
 
 
 if __name__ == '__main__':
