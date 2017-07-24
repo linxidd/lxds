@@ -9,8 +9,19 @@
 {% block content %}
 <div class="editor_wrapper">
   <form id="form" method="post" action="/upload/">
-    标题：<input type="text" name="title" value="" id="title"><br>
-    发布科室：<input type="text" name="publisher" value="" id="publisher">
+  <div class="content_wrapper" style="height: 30px; width: 998px;"><span>文章编辑模块<span></div>
+  <div class="clear" ></div>
+  <div class="content_wrapper" style="height: 50px; width: 100px; float: left;"> <p>标题：</p></div>
+  <div >
+  <input type="text" name="title" bordercolor="#ddd" value="" id="title" style="height: 48px; width: 894px;">
+  </div>
+  <div class="clear" ></div>
+  <div class="content_wrapper" style="height: 50px; width: 100px;float: left; line-height: 40px;"><p>发布科室：</p></div>
+  <div>
+  <input type="text" name="publisher" value="" id="publisher" style="height: 48px; width: 894px;">
+  </div>
+  <div class="clear" ></div>
+  <div class="editor_wrapper">
     <script id="editor" type="text/plain" style="width:1000px;height:500px;"></script>
     <script type="text/javascript">
       var ue=UE.getEditor('editor',{
@@ -19,5 +30,5 @@
     </script>
     <input type="submit" value="提交">
   </form>
-</div>
+  </div>
 {% endblock %}

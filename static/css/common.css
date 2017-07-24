@@ -1,5 +1,6 @@
 @charset "utf-8";
 body{background: #f2f2f2;}
+.clear {clear: both;}
 .main {width: 100%;min-width: 1080px;}
 .header {width: 100%; background: #fff;}
 .header_center {width: 1000px; margin: 0 auto; padding-top: 30px; height: 130px; background: #fff;}
@@ -27,6 +28,9 @@ h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 28px;text-a
 .pages_content{padding-top: 50px;padding-bottom: 50px;}
 .form p{ float:left; display: block;}
 #publisher { float:left; display: block;}
+
+.content_wrapper {border-top: 1px #ddd solid; border-left: 1px #ddd solid; border-right: 1px #ddd solid;}
+.content_wrapper p {height: 51px; width:102px; line-height: 50px;overflow: hidden;font-family: "微软雅黑";font-size: 15px;}
 
 .footer{width: 100%;height: 90px; background: #1369c0;}
 .footer-content{width: 1000px; margin: 0 auto;text-align: center;}
