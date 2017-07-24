@@ -1,5 +1,8 @@
 #-*- coding=utf-8 -*-
 import os
+import re
+from datetime import datetime
+import json
 from flask import Flask, render_template, request, Markup
 from flask_sqlalchemy import SQLAlchemy
 
@@ -50,7 +53,22 @@ def editor():
 
 @app.route('/upload/', methods=['GET', 'POST'])
 def upload():
-    return render_template('article.html', content=Markup(request.form['editorValue']), publish_data=u'2017-10-23 11:34', link=u'新闻')
+    result = {}
+    action = request.args.get('action')
+    with open(os.path.join(os.curdir,'static','ueditor','php','config.json')) as fp:
+        try:
+            CONFIG = json.loads(re.sub(r'\/\*.*\*\/','',fp.read()))
+        except:
+            CONFIG = {}
+    if action == 'config':
+        result = json.dumps(CONFIG)
+        return result
+    else:
+        now = datetime.now()
+        article = Article(article_title = request.form['title'], article_content = request.form['editorValue'], article_time = now, article_from = request.form['publisher'], article_readed = '', article_wait = '')
+        db.session.add(article)
+        db.session.commit()
+        return render_template('article.html', title=request.form['title'], article_content=Markup(request.form['editorValue']), publish_date=now.strftime('%Y-%m-%d %H:%M:%S'), publisher=request.form['publisher'], link=u'新闻')
 
 
 if __name__ == '__main__':

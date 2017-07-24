@@ -25,7 +25,8 @@ h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 28px;text-a
 .pages_print .printIco{background: url(../img/ico.png) no-repeat 0px 0px;padding-left: 22px;}
 #btnPrint{cursor:pointer;}
 .pages_content{padding-top: 50px;padding-bottom: 50px;}
-
+.form p{ float:left; display: block;}
+#publisher { float:left; display: block;}
 
 .footer{width: 100%;height: 90px; background: #1369c0;}
 .footer-content{width: 1000px; margin: 0 auto;text-align: center;}

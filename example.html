@@ -1,1 +1,24 @@
-<p style="text-align: center;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px;">临西县地方税务局关于举行岗位大练兵的通知</span></p><p><font face="宋体, SimSun"><span style="font-size: 18px;">各股室、分局、稽查局：</span></font></p><p style="margin-top: 5px; text-indent: 2em;"><font face="宋体, SimSun"><span style="font-size: 18px;">根据省局相关通知精神要求</span></font></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time</title>
+  <script type="text/javascript">
+  var date = new Date();
+  var seperator = "-"
+  var month = date.getMonth() + 1;
+  var strDate = date.getDate();
+  if (month >= 1 && month<= 9) {
+    month = "0" + month
+  }
+  if (strDate >= 0 && strDate <= 9){
+    strDate = "0" + strDate;
+  }
+  var currentdate = date.getFullYear() + seperator + month + seperator + strDate +seperator + date.getHours() +seperator+date.getMinutes() + seperator + date.getSeconds();
+  document.getElementById("article_time").value = currentdate;
+  </script>
+</head>
+<body>
+  <input type="text" id="article_time">
+</body>
+</html>

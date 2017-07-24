@@ -8,7 +8,6 @@
 {% include "menu.html" %}
 {% endblock %}
 {% block content %}
-<div class="content">
   <div class="padd">
 <!-- 位置条开始 -->
     <div class="BreadcrumbNav">
@@ -23,9 +22,10 @@
     </div>
 <!-- 文章数据开始　-->
     <div class="article oneColumn pub_border">
-      <h1>临西县地方税务局关于开展岗位大练兵活动的通知</h1>
+      <h1>{{ title }}</h1>
       <div class="pages-data">
-        <span class="font">{{ publish_data }}</span>
+        {{ publish_date }}
+        <span class="font">来源：{{ publisher }}</span>
         <div class="pages_print">
           <span class="font index_switchsize">
           【字体：
@@ -39,7 +39,7 @@
       </div>
 <!-- 文章内容开始　-->
       <div class="pages_content" id="UEDITOR_CONTENT">
-        {{ content }}
+        {{ article_content }}
         <script type="text/javascript">
           uParse(#UEDITOR_CONTENT)
         </script>
@@ -48,5 +48,4 @@
 <!-- 文章数据结束　-->
     </div>
   </div>
-</div>
 {% endblock %}
