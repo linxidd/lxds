@@ -34,11 +34,9 @@ class Article(db.Model):
         return '<Article %r>' % self.article_title
 
 
-'''
 @app.route('/')
 def index():
     return render_template('index.html')
-'''
 
 
 @app.route('/article')

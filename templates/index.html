@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block header %}
+{{ super() }}
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script src="{{ url_for('static', filename='ueditor/ueditor.parse.js')}}"></script>
+{% endblock %}
+{% block menu %}
+{% include "menu.html" %}
+{% endblock %}
+{% block content %}
+
+{% endblock %}

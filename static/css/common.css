@@ -6,10 +6,10 @@ body{background: #f2f2f2;}
 .header_center {width: 1000px; margin: 0 auto; padding-top: 30px; height: 130px; background: #fff;}
 .nav {background: url(../img/nav_bg.jpg) repeat-x 0 0; height: 37px;width: 100%;}
 .nav_home{width: 1100px;margin:0 auto;}
-#menu{width:900px;height: 37px;margin:0 auto}
+#menu{width:1000px;height: 37px;margin:0 auto}
 #nav{margin:0px;padding:0px;}
 #nav .mainlevel{font-weight: narmal;position: relative;}
-.nav_home li{float: left;padding: 0 26px;font-family: "FZYouHK_512B","微软雅黑","宋体";font-size: 20px;color: #fff;line-height: 37px;border-right: 1px solid #bfbfbf;display: block;}
+.nav_home li{float: left;padding: 0 24px;font-family: "FZYouHK_512B","微软雅黑","宋体";font-size: 20px;color: #fff;line-height: 37px;border-right: 1px solid #bfbfbf;display: block;}
 .nav_home li a {display: block;color: #fff;}
 
 h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 28px;text-align: center;padding: 26px 0 26px 0;font-weight: normal;}
@@ -30,8 +30,8 @@ h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 28px;text-a
 #publisher { float:left; display: block;}
 
 .content_wrapper {border-top: 1px #ddd solid; border-left: 1px #ddd solid; border-right: 1px #ddd solid;}
-.content_wrapper p {height: 51px; width:102px; line-height: 50px;overflow: hidden;font-family: "微软雅黑";font-size: 15px;}
+.content_wrapper p {height: 100%; width:100%; line-height: 30px;overflow: hidden;font-family: "微软雅黑";font-size: 15px; text-align: center;}
 
 .footer{width: 100%;height: 90px; background: #1369c0;}
 .footer-content{width: 1000px; margin: 0 auto;text-align: center;}
-.footer-content span {color: #fff;}
+.footer-content span {font-size: 10px; color: #fff;}
