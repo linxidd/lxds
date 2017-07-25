@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="../static/css/base.css">
   <link rel="stylesheet" type="text/css" href="../static/css/common.css">
   <link rel="stylesheet" type="text/css" href="../static/css/common_detail.css">
+  <script type="text/javascript" charset="utf-8" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
   {% block header %}
   {% endblock %}
 </head>
@@ -41,9 +42,11 @@
         <br>
         <span>临西县地方税务局主办</span> <br>
         <span>版权所有　临西县地方税务局</span> <br>
-        <span>地址：河北省邢台市临西县珠江路　邮编：０５４９００</span>
+        <span>地址：河北省邢台市临西县珠江路　邮编：054900</span>
       </div>
     </div>
   </div>
+  {% block js %}
+  {% endblock %}
 </body>
 </html>

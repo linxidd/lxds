@@ -1,1 +1,14 @@
 .editor_wrapper {width:1000px;margin: 0 auto;}
+
+.container {background: #fff; padding:30px;}
+.mt20 {margin-top: 20px;}
+.fl {float:left;}
+.slideBox{width:592px; height: 382px;overflow: hidden;position: relative;}
+.slideBox .hd {height: 12px;overflow: hidden;position: absolute;right: 10px;bottom: 15px;z-index: 1;}
+.slideBox .hd ul li.on {background-position: left;color:#fff;}
+.slideBox .hd ul {overflow: hidden;zoom:1;float: left;}
+.slideBox .hd ul li {float: left;margin-right: 8px;width: 12px;height: 12px;background: url(../img/focusPoint.png) no-repeat right;cursor: pointer;text-indent: -222px;}
+.slideBox .bd {position: relative;height: 100%;z-index: 0;}
+.slideBox .bd li {zoom:1;vertical-align: middle;}
+.slideBox .bd img {width:592px;height: 382px;display: block;border: none;margin: 0;padding: 0;}
+.slideBox .bd li a span {position: absolute;bottom: 0px;left: 0px;width:100%;padding-left: 2%;line-height: 45px;height: 45px;background: rgba(0,0,0,0.8) !important; color: #fff;}

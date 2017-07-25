@@ -1,10 +1,10 @@
 @charset "utf-8";
 body{background: #f2f2f2;}
 .clear {clear: both;}
-.main {width: 100%;min-width: 1080px;}
+.main {width: 100%;min-width: 1100px;}
 .header {width: 100%; background: #fff;}
 .header_center {width: 1000px; margin: 0 auto; padding-top: 30px; height: 130px; background: #fff;}
-.nav {background: url(../img/nav_bg.jpg) repeat-x 0 0; height: 37px;width: 100%;}
+.nav {background: #1369c0; height: 37px;width: 100%;}
 .nav_home{width: 1100px;margin:0 auto;}
 #menu{width:1000px;height: 37px;margin:0 auto}
 #nav{margin:0px;padding:0px;}
@@ -13,7 +13,7 @@ body{background: #f2f2f2;}
 .nav_home li a {display: block;color: #fff;}
 
 h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 28px;text-align: center;padding: 26px 0 26px 0;font-weight: normal;}
-.content{width: 1000px;margin: 0 auto; background: #fff;}
+.content{width: 1100px;margin:auto; position:relative;}
 .padd{padding:0 36px 60px 36px;}
 .oneColumn{padding: 10px 66px 38px 66px;}
 .BreadcrumbNav{line-height: 44px;height: 44px;font-size: 12px;font-family: "宋体";color: #000;}

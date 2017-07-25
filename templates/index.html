@@ -2,11 +2,38 @@
 {% block header %}
 {{ super() }}
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<script src="{{ url_for('static', filename='ueditor/ueditor.parse.js')}}"></script>
 {% endblock %}
 {% block menu %}
 {% include "menu.html" %}
 {% endblock %}
 {% block content %}
-
+<div class="container">
+  <div class="mt20">
+    <div id="slideBox" class="slideBox fl">
+      <div class="hd">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </div>
+      <div class="bd">
+        <ul>
+          <li><a href=""><img src="" alt="" width="592" height="382"><span>临西县地方税务局</span></a></li>
+          <li><a href=""><img src="" alt=""><span></span></a></li>
+          <li><a href=""><img src="" alt=""><span></span></a></li>
+          <li><a href=""><img src="" alt=""><span></span></a></li>
+          <li><a href=""><img src="" alt=""><span></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{{ url_for('static', filename='js/jquery.SuperSlide.2.1.1.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}
