@@ -1,6 +1,7 @@
 .mainlevel a:hover {background:#015293;}
 .editor_wrapper {width:1000px;margin: 0 auto;}
 
+ul.list li {line-height: 34px;height: 34px;padding-left: 12px;background: url(../img/icoPoint.jpg) no-repeat 0px 16px;}
 .container {background: #fff; padding:30px;}
 .mt20 {margin-top: 20px;}
 .fl {float:left;}
@@ -15,9 +16,18 @@
 .slideBox .bd img {width:592px;height: 382px;display: block;border: none;margin: 0;padding: 0;}
 .slideBox .bd li a span {position: absolute;bottom: 0px;left: 0px;width:100%;padding-left: 2%;line-height: 45px;height: 45px;background: rgba(0,0,0,0.8) !important; color: #fff;}
 
+.column2 {position: relative;float:left;width: 1040px; margin-top: 50px;}
+.column2_lf {float: left;width: 320px;height: auto;padding: 0px 20px 0px 0px;}
+.column2_lf1{width:320px;}
+.lmtit {font-family: "微软雅黑";font-size:20px;border-bottom: 1px solid #bababa; }
+.lmtit a{color: #000;}
+.column2_fl1 ul {margin-top: 10px;margin-bottom: 20px;}
+.news_title {height: 206px;overflow: hidden;}
+.news_title {}
 .yaowen {width: 422px;}
 .title {height: 40px;line-height: 40px;}
 .yaowen .title {background:#f2f2f2;}
 .title ul {height: 40px;width:100%;}
 .title li a{float: left;font-family: "微软雅黑","宋体"; font-size: 20px;line-height: 40px;display: block;font-weight: bold;padding: 0 65px;color: #000;}
 .title li.on a{background: #1369c0;color:#fff;}
+.yaowen ul.list {padding-top: 10px;}
