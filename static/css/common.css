@@ -2,8 +2,7 @@
 body{background: #f2f2f2;}
 .clear {clear: both;}
 ul {display: block;}
-body, div, ul, ol, ul, li, ol, dl, dd, dt, form, span, p, textarea {margin: 0;padding: 0;list-style: none;
-}
+
 .main {width: 100%;min-width: 1100px;}
 .header {width: 100%; background: #fff;}
 .header_center {width: 1000px; margin: 0 auto; padding-top: 30px; height: 130px; background: #fff;}
@@ -32,8 +31,6 @@ h1{line-height: 56px;font-family: "微软雅黑","宋体";font-size: 28px;text-a
 .form p{ float:left; display: block;}
 #publisher { float:left; display: block;}
 
-.content_wrapper {border-top: 1px #ddd solid; border-left: 1px #ddd solid; border-right: 1px #ddd solid;}
-.content_wrapper p {height: 100%; width:100%; line-height: 30px;overflow: hidden;font-family: "微软雅黑";font-size: 15px; text-align: center;}
 
 .footer{width: 1100px;height: 90px; background: #1369c0; margin: 0 auto;}
 .footer-content{width: 1000px; margin: 0 auto;text-align: center;}

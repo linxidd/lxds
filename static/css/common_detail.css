@@ -1,7 +1,10 @@
 .mainlevel a:hover {background:#015293;}
-.editor_wrapper {width:1000px;margin: 0 auto;}
-
+.editor_wrapper {width:1000px;margin: 0 auto;background: #fff;}
+.editor_title {height: 30px;line-height: 30px;display: block;}
+.editor_title span {font-weight: bold;font-size: 25px;text-align: center;display: block;}
 ul.list li {line-height: 34px;height: 34px;padding-left: 12px;background: url(../img/icoPoint.jpg) no-repeat 0px 16px;}
+ul.list {padding-top: 12px;}
+.list li {font-size: 14px;}
 .container {background: #fff; padding:30px;}
 .mt20 {margin-top: 20px;}
 .fl {float:left;}
@@ -22,8 +25,7 @@ ul.list li {line-height: 34px;height: 34px;padding-left: 12px;background: url(..
 .lmtit {font-family: "微软雅黑";font-size:20px;border-bottom: 1px solid #bababa; }
 .lmtit a{color: #000;}
 .column2_fl1 ul {margin-top: 10px;margin-bottom: 20px;}
-.news_title {height: 206px;overflow: hidden;}
-.news_title {}
+.news_title {padding-top:12px;overflow: hidden;}
 .yaowen {width: 422px;}
 .title {height: 40px;line-height: 40px;}
 .yaowen .title {background:#f2f2f2;}

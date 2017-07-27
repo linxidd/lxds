@@ -9,26 +9,21 @@
 {% block content %}
 <div class="editor_wrapper">
   <form id="form" method="post" action="/upload/">
-  <div class="content_wrapper" style="height: 30px; width: 998px;"><p>文章编辑模块</p></div>
-  <div class="clear" ></div>
-  <div class="content_wrapper" style="height: 50px; width: 100px; float: left;"> <p>标题：</p></div>
-  <div >
+  <div class="editor_title" style="height: 30px; width: 998px;"><span>文章编辑模块</span></div>
+  <div class="editor_choice">
+  <p>标题：</p>
   <input type="text" name="title" bordercolor="#ddd" value="" id="title" style="height: 48px; width: 894px;">
   </div>
-  <div class="clear" ></div>
-  <div class="content_wrapper" style="height: 50px; width: 100px;float: left; line-height: 40px;"><p>发布科室：</p></div>
-  <div>
+  <div class="editor_choice">
+  <p>发布科室：</p>
   <input type="text" name="publisher" value="" id="publisher" style="height: 48px; width: 894px;">
   </div>
-  <div class="clear" ></div>
-  <div class="editor_wrapper">
     <script id="editor" type="text/plain" style="width:1000px;height:500px;"></script>
     <script type="text/javascript">
       var ue=UE.getEditor('editor',{
-                          serverUrl:"/upload/"
-                        })
+                          serverUrl:"/upload/"});
     </script>
     <input type="submit" value="提交">
   </form>
-  </div>
+</div>
 {% endblock %}

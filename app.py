@@ -1,4 +1,4 @@
-#-*- coding=utf-8 -*-
+# -*- coding=utf-8 -*-
 import os
 import re
 from datetime import datetime
@@ -53,9 +53,10 @@ def editor():
 def upload():
     result = {}
     action = request.args.get('action')
-    with open(os.path.join(os.curdir,'static','ueditor','php','config.json')) as fp:
+    with open(os.path.join(os.getcwd(), 'static', 'ueditor', 'php',
+                           'config.json')) as fp:
         try:
-            CONFIG = json.loads(re.sub(r'\/\*.*\*\/','',fp.read()))
+            CONFIG = json.loads(re.sub(r'\/\*.*\*\/', '', fp.read()))
         except:
             CONFIG = {}
     if action == 'config':
@@ -63,10 +64,21 @@ def upload():
         return result
     else:
         now = datetime.now()
-        article = Article(article_title = request.form['title'], article_content = request.form['editorValue'], article_time = now, article_from = request.form['publisher'], article_readed = '', article_wait = '')
+        article = Article(article_title=request.form['title'],
+                          article_content=request.form['editorValue'],
+                          article_time=now,
+                          article_from=request.form['publisher'],
+                          article_readed='',
+                          article_wait='')
         db.session.add(article)
         db.session.commit()
-        return render_template('article.html', title=request.form['title'], article_content=Markup(request.form['editorValue']), publish_date=now.strftime('%Y-%m-%d %H:%M:%S'), publisher=request.form['publisher'], link=u'新闻')
+        return render_template('article.html',
+                               title=request.form['title'],
+                               article_content=Markup(
+                                   request.form['editorValue']),
+                               publish_date=now.strftime('%Y-%m-%d %H:%M:%S'),
+                               publisher=request.form['publisher'],
+                               link=u'新闻')
 
 
 if __name__ == '__main__':
