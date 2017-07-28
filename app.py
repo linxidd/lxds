@@ -5,6 +5,7 @@ from datetime import datetime
 import json
 from flask import Flask, render_template, request, Markup
 from flask_sqlalchemy import SQLAlchemy
+from upload import Uploader
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
@@ -62,6 +63,27 @@ def upload():
     if action == 'config':
         result = json.dumps(CONFIG)
         return result
+    elif action in ('uploadimage', 'uploadvideo', 'uploadfile'):
+        if action == "uploadimage":
+            fieldName = CONFIG.get('imageFieldName')
+            config = {
+                'pathFormat': CONFIG['imagePathFormat'],
+                'maxSize':CONFIG['imageMaxSize'],
+                'allowFiles':CONFIG['imageAllowFiles']
+            }
+        else:
+            fieldName = CONFIG.get('fileFieldName')
+            config = {
+                'pathFormat': CONFIG['filePathFormat'],
+                'maxSize':CONFIG['fileMaxSize'],
+                'allowFiles':CONFIG['fileAllowFiles']
+            }
+        if fieldName in request.files:
+            field = request.files[fieldName]
+            uploader = Uploader(field,config,app.static_folder)
+            result = uploader.getFileInfo()
+        return json.dumps(result)
+
     else:
         now = datetime.now()
         article = Article(article_title=request.form['title'],

@@ -11,19 +11,30 @@
   <form id="form" method="post" action="/upload/">
   <div class="editor_title" style="height: 30px; width: 998px;"><span>文章编辑模块</span></div>
   <div class="editor_choice">
-  <p>标题：</p>
-  <input type="text" name="title" bordercolor="#ddd" value="" id="title" style="height: 48px; width: 894px;">
+  <span>发布地</span>
+  <select name="location">
+  <option value ="xwtp">新闻图片</option>
+  <option value ="xxjb">信息简报</option>
+  <option value="wltz">网络通知</option>
+  <option value="ldjh">领导讲话</option>
+</select>
   </div>
   <div class="editor_choice">
-  <p>发布科室：</p>
-  <input type="text" name="publisher" value="" id="publisher" style="height: 48px; width: 894px;">
+  <span>标题：</span>
+  <input type="text" name="title" bordercolor="#ddd" value="" id="title">
   </div>
+  <div class="editor_choice">
+  <span>发布科室：</span>
+  <input type="text" name="publisher" value="" id="publisher">
+  </div>
+  <div>
     <script id="editor" type="text/plain" style="width:1000px;height:500px;"></script>
     <script type="text/javascript">
       var ue=UE.getEditor('editor',{
                           serverUrl:"/upload/"});
     </script>
     <input type="submit" value="提交">
+  </div>
   </form>
 </div>
 {% endblock %}

@@ -1,7 +1,9 @@
 .mainlevel a:hover {background:#015293;}
-.editor_wrapper {width:1000px;margin: 0 auto;background: #fff;}
-.editor_title {height: 30px;line-height: 30px;display: block;}
-.editor_title span {font-weight: bold;font-size: 25px;text-align: center;display: block;}
+.editor_wrapper {width:1000px;margin: 0 auto;background: #fff;padding:0 30px 0 30px;}
+.editor_title {height: 30px;line-height: 30px;display: block; }
+.editor_title span {width:100%;font-weight: bold;font-size: 25px;text-align: center;display: block;}
+.editor_choice {padding-left:30px; border:1px  #000 solid;}
+.editor_choice span {display:inline-block;text-align: center; width:150px;border-right: 1px #000 solid}
 ul.list li {line-height: 34px;height: 34px;padding-left: 12px;background: url(../img/icoPoint.jpg) no-repeat 0px 16px;}
 ul.list {padding-top: 12px;}
 .list li {font-size: 14px;}
